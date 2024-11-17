@@ -125,12 +125,12 @@ function S:TalkingHead()
 		local button = TalkingHeadFrame.MainFrame.CloseButton
 		S:HandleCloseButton(button)
 		button:ClearAllPoints()
-		button:Point('TOPRIGHT', TalkingHeadFrame.BackgroundFrame, 'TOPRIGHT', 0, -2)
+		button:Point('TOPRIGHT', TalkingHeadFrame.BackgroundFrame, 'TOPRIGHT', 0, 0)
 	else
 		TalkingHeadFrame.MainFrame.Model:CreateBackdrop('Transparent')
 		TalkingHeadFrame.MainFrame.Model.backdrop:ClearAllPoints()
 		TalkingHeadFrame.MainFrame.Model.backdrop:Point('CENTER')
-		TalkingHeadFrame.MainFrame.Model.backdrop:Size(120, 119)
+		TalkingHeadFrame.MainFrame.Model.backdrop:Size(120, 120)
 
 		TalkingHeadFrame.MainFrame.CloseButton:Kill()
 	end

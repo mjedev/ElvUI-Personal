@@ -92,7 +92,7 @@ local function HandleProgressBar(tracker, key)
 		local label = bar.Label
 		if label then
 			label:ClearAllPoints()
-			label:Point('CENTER', bar)
+			label:Point('CENTER', bar, 0, 1)
 			label:FontTemplate(nil, E.db.general.fontSize, E.db.general.fontStyle)
 		end
 	end

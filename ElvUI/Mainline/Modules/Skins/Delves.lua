@@ -69,7 +69,11 @@ function S:Blizzard_DelvesDifficultyPicker()
 	DifficultyPickerFrame:StripTextures()
 	DifficultyPickerFrame:SetTemplate('Transparent')
 
-	S:HandleCloseButton(DifficultyPickerFrame.CloseButton)
+	local button = DifficultyPickerFrame.CloseButton
+	S:HandleCloseButton(button)
+	button:ClearAllPoints()
+	button:Point('TOPRIGHT', DifficultyPickerFrame, 'TOPRIGHT', 0, 0)
+
 	S:HandleDropDownBox(DifficultyPickerFrame.Dropdown)
 	S:HandleButton(DifficultyPickerFrame.EnterDelveButton)
 

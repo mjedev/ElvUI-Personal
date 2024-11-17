@@ -834,7 +834,7 @@ function CH:StyleChat(frame)
 	end
 
 	tab.Text:ClearAllPoints()
-	tab.Text:Point('CENTER', tab, 0, -1)
+	tab.Text:Point('CENTER', tab, 0, 1)
 
 	hooksecurefunc(tab, 'SetAlpha', CH.ChatFrameTab_SetAlpha)
 
