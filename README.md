@@ -1,3 +1,5 @@
+## **This fork contains minor adjustments to various elements in the ElvUI AddOn to match personal taste.**
+
 **User Interface replacement AddOn for World of Warcraft.**
 
 [![Support](https://img.shields.io/badge/Support-❤️-FF96D7?style=flat-square)](https://tukui.org/support)
