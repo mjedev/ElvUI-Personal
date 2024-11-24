@@ -2136,7 +2136,7 @@ function B:ConstructContainerFrame(name, isBank)
 	f:SetScript('OnClick', function(frame) if IsControlKeyDown() then B.PostBagMove(frame.mover) end end)
 
 	f.closeButton = CreateFrame('Button', name..'CloseButton', f, 'UIPanelCloseButton')
-	f.closeButton:Point('TOPRIGHT', 5, 5)
+	f.closeButton:Point('TOPRIGHT', 3, 3)
 
 	f.helpButton = CreateFrame('Button', name..'HelpButton', f)
 	f.helpButton:Point('RIGHT', f.closeButton, 'LEFT', 0, 0)
